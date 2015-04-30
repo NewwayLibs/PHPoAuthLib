@@ -81,7 +81,6 @@ class CurlClient extends AbstractClient
         }
 
         $extraHeaders['Host']       = 'Host: '.$endpoint->getHost();
-        $extraHeaders['Connection'] = 'Connection: close';
 
         $ch = curl_init();
 
